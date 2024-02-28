@@ -1,3 +1,5 @@
+
+//************************MODEL******************** */
 const model = [
     [0, 0, 0, 0, 0, 0, 0],
     [0, 0, 0, 0, 0, 0, 0],
@@ -7,7 +9,9 @@ const model = [
     [0, 0, 0, 0, 0, 0, 0],
   ];
 
-const gridContainer=document.getElementById('connect4-grid')
+  //************************VIEW******************** */
+
+  idContainer=document.getElementById('connect4-grid')
 
 function createCell(row, col){
     const cell=document.createElement('div');
@@ -28,6 +32,9 @@ function renderGrid(){
         }
     }
 }
+
+
+//************************CONTROLLER******************** */
 
 function handleMove(col){
     let row;
