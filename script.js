@@ -23,12 +23,12 @@ function createCell(row, col){
     return cell;
 }
 
-function renderGrid(){
-    gridContainer.innerHTML='';
-    for(let row=0; row<model.length; row++){
-        for(let col=0; col<model[row].length; col++){
-            const cell=createCell(row, col);
-            gridContainer.appendChild(cell);
+function renderGrid() {
+    idContainer.innerHTML = '';
+    for (let row = 0; row < model.length; row++) {
+        for (let col = 0; col < model[row].length; col++) {
+            const cell = createCell(row, col);
+            idContainer.appendChild(cell);
         }
     }
 }
